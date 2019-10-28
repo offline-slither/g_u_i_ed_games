@@ -1,5 +1,5 @@
 from random import choice
-from donees import *
+from donnees import *
 
 
 def Chose_word_within():  # work
@@ -32,12 +32,12 @@ while again == "y":
         for each in listed_word:
             if each in validated_letter:
                 displayed_word += each
-                if displayed_word == word:
-                    print("félicitation vous avez gagné")
-                    win = True
-                    break
             else:
                 displayed_word += "*"
+        if displayed_word == word:
+            print("félicitation vous avez gagné")
+            win = True
+            break
         print(displayed_word)
         print("proposer une lettre ou devinez le mot")
         p_answer = input("")
@@ -58,10 +58,10 @@ while again == "y":
                 win = True
                 break
             else:
-                print(
-                    "ce n'est pas le bon mot ou vous l'avez mal écrit vous perdez une chance")
+                print("ce n'est pas le bon mot ou vous l'avez mal écrit vous perdez une chance")
                 # print(f"vous avez entré {p_answer} la réponse etais {word}")
                 chance -= 1
+                print(chance)
         else:
             print("vous avez entré un imput incorect ou invalide , re-essayez")
     if win == True:

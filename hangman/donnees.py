@@ -9,15 +9,16 @@ nom_fichier_scores = "scores"
 liste_mots = [
     "armoire",
     "armurerie",
-    "bibliothéque"
+    "bibliothéque",
     "boucle",
     "boisson",
     "buisson",
     "bureau",
+    "carton",
     "chaise",
     "chariot",
-    "carton",
     "couteau",
+    "culotte",
     "diable",
     "epiderme",
     "fichier",
